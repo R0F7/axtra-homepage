@@ -34,7 +34,7 @@ const WhoWeAre = () => {
               experiences that customers love our services.
             </p>
             <div className="mt-14 flex justify-center w-full pl-14">
-              <Button></Button>
+              <Button text={"Explore Us"} color={"#8D8D8D"}></Button>
             </div>
           </div>
         </div>
