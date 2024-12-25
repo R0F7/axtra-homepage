@@ -1,10 +1,16 @@
+import Hero from "../component/Hero/Hero";
 import Navbar from "../component/Navbar/Navbar";
 
 const Layout = () => {
   return (
-    <section>
-      <Navbar></Navbar>
-    </section>
+    <>
+      <header>
+        <Navbar></Navbar>
+      </header>
+      <main>
+        <Hero></Hero>
+      </main>
+    </>
   );
 };
 

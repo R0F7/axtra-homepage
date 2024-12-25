@@ -3,6 +3,7 @@ import logo_white from "../../assets/site-logo-white-2.webp";
 import bigBall from "../../assets/11.webp";
 import smallBall from "../../assets/12.webp";
 import { IoSearch } from "react-icons/io5";
+import PropTypes from "prop-types";
 
 const RoutePage = ({ setMenuOpen }) => {
   return (
@@ -125,6 +126,10 @@ const RoutePage = ({ setMenuOpen }) => {
       </section>
     </main>
   );
+};
+
+RoutePage.propTypes = {
+  setMenuOpen: PropTypes.func,
 };
 
 export default RoutePage;

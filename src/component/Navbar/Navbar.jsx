@@ -11,14 +11,13 @@ const Navbar = () => {
   console.log(menuOpen);
 
   return (
-    <nav className="flex justify-between py-5 px-[50px] relative" id="">
+    <nav className="flex justify-between py-5 px-[50px] elative border-b order-[#F5F5F5] fixed top-0 left-0 w-full bg-white" id="">
       {/* logo */}
       <a to="#top">
         <img src={logo_white} alt="Nav logo" />
       </a>
 
       {/* menu */}
-      {/* <div> */}
       <ul className="flex items-center gap-[90px] text-[#121212]">
         <li>HOME</li>
         <li>ABOUT</li>
@@ -28,7 +27,6 @@ const Navbar = () => {
         <li>BLOG</li>
         <li>CONTACT</li>
       </ul>
-      {/* </div> */}
 
       {/* search and hamburger menu */}
       <div className="flex items-center text-2xl gap-6">
@@ -53,7 +51,7 @@ const Navbar = () => {
           <i onClick={() => setMenuOpen(true)}>
             <CgMenuRight />
           </i>
-          <div className={`absolute top-0 left-0 w-full h-screen bg-[#121212] text-white ${menuOpen ? "scale-100" : "scale-0"}`}>
+          <div className={`absolute top-0 left-0 w-full h-screen bg-[#121212] text-white ${menuOpen ? "scale-100" : "scale-0"} `}>
             <RoutePage setMenuOpen={setMenuOpen}></RoutePage>
           </div>
         </div>
