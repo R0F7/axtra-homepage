@@ -1,15 +1,9 @@
-import Hero from "../component/Hero/Hero";
-import Navbar from "../component/Navbar/Navbar";
+import Home from "../pages/Home/Home";
 
 const Layout = () => {
   return (
     <>
-      <header>
-        <Navbar></Navbar>
-      </header>
-      <main>
-        <Hero></Hero>
-      </main>
+      <Home></Home>
     </>
   );
 };

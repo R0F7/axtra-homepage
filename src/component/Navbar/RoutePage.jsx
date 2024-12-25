@@ -7,9 +7,9 @@ import PropTypes from "prop-types";
 
 const RoutePage = ({ setMenuOpen }) => {
   return (
-    <main className="grid grid-cols-12">
+    <section className="grid grid-cols-12">
       {/* Follow Us section */}
-      <section className="col-span-2">
+      <div className="col-span-2">
         <div className="border-b border-[#2A2A2A] pb-14 pl-[50px] pt-14">
           <img src={logo_white} alt="" />
         </div>
@@ -38,10 +38,10 @@ const RoutePage = ({ setMenuOpen }) => {
             <li className="hover:text-[#8E8E8E] hover:duration-300">Blog</li>
           </ul>
         </div>
-      </section>
+      </div>
 
       {/* Route section */}
-      <section className="col-span-7 pt-[145px] border-x border-[#2A2A2A]">
+      <div className="col-span-7 pt-[145px] border-x border-[#2A2A2A]">
         <ul>
           <li className="flex justify-between items-center text-[80px] border-t border-[#2A2A2A] pl-28 y-7 h-[120px]">
             <span>HOME</span>{" "}
@@ -74,10 +74,10 @@ const RoutePage = ({ setMenuOpen }) => {
             <span>CONTACT</span>{" "}
           </li>
         </ul>
-      </section>
+      </div>
 
       {/* Get in touch section */}
-      <section className="pr-[50px] col-span-3 bg-[#1D1D1D] px-[50px] relative">
+      <div className="pr-[50px] col-span-3 bg-[#1D1D1D] px-[50px] relative">
         <div className="flex justify-end pt-8">
           <i
             onClick={() => setMenuOpen(false)}
@@ -123,8 +123,8 @@ const RoutePage = ({ setMenuOpen }) => {
             <img src={bigBall} className="ml0" alt="" />
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 };
 
