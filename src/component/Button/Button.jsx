@@ -2,7 +2,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import PropTypes from "prop-types";
 
 const Button = ({ text, color }) => {
-    console.log(color); //#FFFFFF
+
   return (
     <>
       <button
