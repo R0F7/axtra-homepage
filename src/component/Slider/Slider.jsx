@@ -22,10 +22,6 @@ const Slider = () => {
 
         <div className="relative group">
           <Swiper
-            style={{
-              "--swiper-navigation-color": "#fff",
-              "--swiper-pagination-color": "#fff",
-            }}
             speed={1500}
             parallax={true}
             autoplay={{
@@ -75,7 +71,7 @@ const Slider = () => {
 
             {/* Custom Navigation Buttons */}
             <button className="custom-prev opacity-0 group-hover:opacity-100 absolute top-1/2 left-2 z-50 text-white text-2xl border p-2.5 rounded-full transition-opacity duration-300">
-            <HiArrowLeft />
+              <HiArrowLeft />
             </button>
             <button className="custom-next opacity-0 group-hover:opacity-100 absolute top-1/2 right-4 z-50 text-white text-2xl border p-2.5 rounded-full transition-opacity duration-300">
               <HiArrowRight />

@@ -18,10 +18,6 @@ const Testimonial = () => {
     <section className="relative">
       <div className="container pt-[410px] pb-[330px]">
         <Swiper
-          style={{
-            "--swiper-navigation-color": "#fff",
-            "--swiper-pagination-color": "#fff",
-          }}
           speed={2500}
           parallax={true}
           navigation={{
