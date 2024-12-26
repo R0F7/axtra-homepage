@@ -16,17 +16,17 @@ const Home = () => {
         <Navbar></Navbar>
       </header>
       <main>
-        <Hero></Hero>
+        {/* <Hero></Hero>
         <WhoWeAre></WhoWeAre>
         <OurMarketing></OurMarketing>
-        <Slider></Slider>
-        <Testimonial></Testimonial>
+        <Slider></Slider> */}
+        {/* <Testimonial></Testimonial> */}
         <WhyChooseUS></WhyChooseUS>
         <PricingOverview></PricingOverview>
-        <RecentBlog></RecentBlog>
+        {/* <RecentBlog></RecentBlog> */}
       </main>
       <footer>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </footer>
     </>
   );

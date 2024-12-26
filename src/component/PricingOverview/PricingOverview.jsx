@@ -18,7 +18,7 @@ const PricingOverview = () => {
         </div>
 
         <div className="w-1/2 mt-16">
-          <div className="bg-[#121212] flex justify-between gap-8 py-10 px-[30px] rounded-md mb-5">
+          <div className="bg-[#121212] flex justify-between gap-8 py-10 px-[30px] rounded-md mb-5 relative">
             <div className="flex items-center">
               <i className="bg-[#FF9776] w-10 h-10 rounded-md flex items-center justify-center flex-shrink-0">
                 <FaCheck />
@@ -39,6 +39,10 @@ const PricingOverview = () => {
               <span className="text-4xl">$129</span>
               <span>.99</span>
             </p>
+
+            <div className="absolute -top-4 right-6">
+              <button className="bg-[#FF9776] text-white rounded-md text-xs py-1.5 px-3 uppercase font-medium">Best Value</button>
+            </div>
           </div>
           <div className="bg-white flex justify-between gap-8 py-10 px-[30px] rounded-md mb-5 shadow">
             <div className="flex items-center">

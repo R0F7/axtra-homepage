@@ -2,7 +2,7 @@ import icon from "../../assets/second page icon.png";
 
 const SecondPage = () => {
   return (
-    <section className="bg-[#F3ECEC] min-h-screen pt-[150px]">
+    <section className="bg-[#F3ECEC] min-h-screen w-full pt-[150px]">
       <div className="container">
         <div className="flex">
           {/* left part */}

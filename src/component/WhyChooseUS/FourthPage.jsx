@@ -2,7 +2,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 const FourthPage = () => {
   return (
-    <section className="bg-[#E1E4CD] min-h-screen flex flex-col justify-center pt-20">
+    <section className="bg-[#E1E4CD] min-h-screen w-full flex flex-col justify-center pt-20">
       <p className="text-[#121212] text-[28px] pb-[25px] text-center font-light">
         Have you project in mind?
       </p>

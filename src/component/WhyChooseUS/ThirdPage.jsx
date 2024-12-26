@@ -2,7 +2,7 @@ import img from "../../assets/counter-3.webp";
 
 const ThirdPage = () => {
   return (
-    <section className="bg-[#FFFAF0] min-h-screen flex items-end justify-center">
+    <section className="bg-[#FFFAF0] min-h-screen w-full flex items-end justify-center">
       <div className="container flex justify-between">
         <div className="grid grid-cols-2 gap-x-24">
           <div>
