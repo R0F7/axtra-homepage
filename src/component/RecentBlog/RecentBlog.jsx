@@ -15,8 +15,8 @@ const RecentBlog = () => {
     <section className="container pb-[140px]">
       <HomeCommon {...blogContent}></HomeCommon>
 
-      <div className="flex justify-between gap-5">
-        <div className="w-1/2 flex items-end">
+      <div className="flex flex-col lg:flex-row justify-between gap-5">
+        <div className="w-full lg:w-1/2 flex items-end">
           <div className="h-[500px] w-[690px] -z-10">
             <img className="h-full w-full" src={blogImg} alt="Blog Image" />
           </div>
@@ -33,7 +33,7 @@ const RecentBlog = () => {
           </div>
         </div>
 
-        <div className="w-1/2 flex items-end">
+        <div className="w-full lg:w-1/2 flex items-end">
           <div className="h-[500px] w-[690px] -z-10">
             <img className="h-full w-full" src={blogImg1} alt="Blog Image" />
           </div>

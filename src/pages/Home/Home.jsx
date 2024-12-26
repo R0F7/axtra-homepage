@@ -7,6 +7,10 @@ import RecentBlog from "../../component/RecentBlog/RecentBlog";
 import Slider from "../../component/Slider/Slider";
 import Testimonial from "../../component/Testimonial/Testimonial";
 import WhoWeAre from "../../component/WhoWeAre/WhoWeAre";
+import FirstPage from "../../component/WhyChooseUS/FirstPage";
+import FourthPage from "../../component/WhyChooseUS/FourthPage";
+import SecondPage from "../../component/WhyChooseUS/SecondPage";
+import ThirdPage from "../../component/WhyChooseUS/ThirdPage";
 import WhyChooseUS from "../../component/WhyChooseUS/WhyChooseUS";
 
 const Home = () => {
@@ -16,17 +20,23 @@ const Home = () => {
         <Navbar></Navbar>
       </header>
       <main>
-        {/* <Hero></Hero>
+        <Hero></Hero>
         <WhoWeAre></WhoWeAre>
         <OurMarketing></OurMarketing>
-        <Slider></Slider> */}
-        {/* <Testimonial></Testimonial> */}
-        {/* <WhyChooseUS></WhyChooseUS> */}
-        {/* <PricingOverview></PricingOverview> */}
-        {/* <RecentBlog></RecentBlog> */}
+        <Slider></Slider>
+        <Testimonial></Testimonial>
+        <WhyChooseUS></WhyChooseUS>
+        <div className="block lg:hidden">
+          <FirstPage></FirstPage>
+          <SecondPage></SecondPage>
+          <ThirdPage></ThirdPage>
+          <FourthPage></FourthPage>
+        </div>
+        <PricingOverview></PricingOverview>
+        <RecentBlog></RecentBlog>
       </main>
       <footer>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </footer>
     </>
   );

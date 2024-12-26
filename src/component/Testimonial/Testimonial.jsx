@@ -16,7 +16,7 @@ import testimonialImg6 from "../../assets/testimonialImage/Testimonial6.webp";
 const Testimonial = () => {
   return (
     <section className="relative">
-      <div className="container pt-[410px] pb-[330px]">
+      <div className="container !py-[60px] !md:py-0 md:pt-[300px] lg:!pt-[410px] md:!pb-[200px] lg:!pb-[330px]">
         <Swiper
           speed={2500}
           parallax={true}
@@ -26,7 +26,7 @@ const Testimonial = () => {
           }}
           loop={true}
           modules={[Parallax, Pagination, Navigation, Autoplay]}
-          className="mySwiper w-[750px]"
+          className="mySwiper w-[330px] md:w-[750px]"
         >
           {/* Slides */}
           <SwiperSlide>
@@ -34,7 +34,7 @@ const Testimonial = () => {
               <div className="flex justify-center pb-14">
                 <img className="w-20" src={quotation} alt="quotation" />
               </div>
-              <p className="text-2xl text-[#121212] w-[700px] text-center mx-auto italic leading-normal text-wrap">
+              <p className="text-xl lg:text-2xl text-[#121212] w-full md:w-[700px] text-center mx-auto italic leading-normal text-wrap">
                 When we talk about Alts, we do not mean a typical business
                 partner, but rather a team that collaborates with us daily,
                 always there for us when we encounter difficulties and celebrate
@@ -53,7 +53,7 @@ const Testimonial = () => {
               <div className="flex justify-center pb-14">
                 <img className="w-20" src={quotation} alt="quotation" />
               </div>
-              <p className="text-2xl text-[#121212] w-[700px] text-center mx-auto italic leading-normal">
+              <p className="text-xl lg:text-2xl text-[#121212] w-full md:w-[700px] text-center mx-auto italic leading-normal">
                 When we talk about Alts, we do not mean a typical business
                 partner, but rather a team that collaborates with us daily,
                 always there for us when we encounter difficulties and celebrate
@@ -80,12 +80,17 @@ const Testimonial = () => {
         </Swiper>
       </div>
       <div>
-          <img className="absolute top-32 left-96" src={testimonialImg1} alt="Testimonial Image" />
-          <img className="absolute top-44 right-96" src={testimonialImg2} alt="Testimonial Image" />
-          <img className="absolute top-[500px] left-14" src={testimonialImg3} alt="Testimonial Image" />
-          <img className="absolute top-[530px] right-14" src={testimonialImg4} alt="Testimonial Image" />
-          <img className="absolute bottom-[90px] left-44" src={testimonialImg5} alt="Testimonial Image" />
-          <img className="absolute bottom-[310px] right-64" src={testimonialImg6} alt="Testimonial Image" />
+          <img className="absolute top-16 left-16 lg:top-32 lg:left-96 hidden md:block" src={testimonialImg1} alt="Testimonial Image" />
+
+          <img className="absolute top-32 lg:top-44 right-28 lg:right-96 hidden md:block" src={testimonialImg2} alt="Testimonial Image" />
+
+          <img className="absolute bottom-20 left-14 lg:top-[500px] lg:left-14 hidden md:block z-10" src={testimonialImg3} alt="Testimonial Image" />
+
+          <img className="absolute bottom-16 right-0 lg:top-[530px] lg:right-14 hidden md:block w-[150px] h-[280px] lg:w-[245px] lg:h-[278px]" src={testimonialImg4} alt="Testimonial Image" />
+
+          <img className="absolute bottom-40 left-0 lg:bottom-[90px] lg:left-44 hidden md:block md:w-[150px] md:h-[400px] lg:h-[430px] lg:w-[330px]" src={testimonialImg5} alt="Testimonial Image" />
+
+          <img className="absolute bottom-20 right-16 lg:bottom-[310px] lg:right-64 hidden md:block" src={testimonialImg6} alt="Testimonial Image" />
       </div>
     </section>
   );

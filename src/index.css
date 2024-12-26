@@ -9,11 +9,6 @@ body {
   font-family: "Kanit", serif;
 }
 
-.container {
-  max-width: 1296px;
-  margin: 0 auto;
-}
-
 .accordion.MuiAccordion-root {
   background: transparent !important;
   border-top: 1px solid black !important;
@@ -39,7 +34,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-#horizontal-wrapper {
+/* #horizontal-wrapper {
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -57,7 +52,46 @@ body {
   display: grid;
   place-items: center;
   flex-shrink: 0;
+} */
+
+#horizontal-wrapper {
+  width: 100%;
+  overflow-y: auto;
+  height: auto;
 }
+
+#horizontal {
+  display: block; 
+  width: 100%;
+}
+
+#horizontal .content {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+@media (min-width: 1024px) {
+  #horizontal-wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #horizontal {
+    display: flex;
+    width: max-content;
+    height: 100vh;
+  }
+
+  #horizontal .content {
+    height: 100vh;
+    width: 100vw;
+    flex-shrink: 0;
+  }
+}
+
 
 /* #horizontal .content:nth-child(1) {
   background: #efefef;
@@ -72,4 +106,23 @@ body {
   background: #aca3ff;
 } */
 
+
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1296px) {
+  .container {
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+}
 

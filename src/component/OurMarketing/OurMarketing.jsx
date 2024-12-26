@@ -10,19 +10,19 @@ const OurMarketing = () => {
   };
 
   return (
-    <section className="container pb-[150px]">
+    <section className="container md:pb-20 lg:!pb-[150px] ">
       <HomeCommon {...marketingContent}></HomeCommon>
 
       {/* services */}
-      <div>
+      <div className="">
         <ul>
-          <li className="flex justify-between border-t  py-[52px]">
-            <h2 className="text-4xl font-medium text-[#121212] w-[30%] leading-tight uppercase">
+          <li className="flex flex-col md:flex-row justify-between border-t py-10 md:py-[52px] md:mt-20 lg:mt-0">
+            <h2 className="text-2xl lg:text-4xl font-medium text-[#121212] md:w-[30%] leading-tight uppercase">
               Search Engine <br />
               Optimization
             </h2>
-            <div className="flex-1">
-              <p className="text-lg text-[#121212] w-[350px] pb-5">
+            <div className="flex-1 pt-4 pb-6 md:pt-0 md:pb-0">
+              <p className="text-lg text-[#121212] md:w-[300px] lg:w-[350px] pb-5">
                 We help brands stand out through aweful, elegant visual design.
                 Our design mainly philosophy.
               </p>
@@ -36,13 +36,13 @@ const OurMarketing = () => {
               <Button text={"Details"} color={"#555555"}></Button>
             </div>
           </li>
-          <li className="flex justify-between border-t  py-[52px]">
-            <h2 className="text-4xl font-medium text-[#121212] w-[30%] leading-tight uppercase">
+          <li className="flex flex-col md:flex-row justify-between border-t py-10 md:py-[50px] lg:py-[52px]">
+            <h2 className="text-2xl lg:text-4xl font-medium text-[#121212] w-[30%] leading-tight uppercase">
               Email <br />
               Marketing
             </h2>
-            <div className="flex-1">
-              <p className="text-lg text-[#121212] w-[350px] pb-5">
+            <div className="flex-1 pt-4 pb-6 md:pt-0 md:pb-0">
+              <p className="text-lg text-[#121212] md:w-[300px] lg:w-[350px] pb-5">
                 We help brands stand out through aweful, elegant visual design.
                 Our design mainly philosophy.
               </p>
@@ -56,13 +56,13 @@ const OurMarketing = () => {
               <Button text={"Details"} color={"#555555"}></Button>
             </div>
           </li>
-          <li className="flex justify-between border-t  py-[52px]">
-            <h2 className="text-4xl font-medium text-[#121212] w-[30%] leading-tight uppercase">
+          <li className="flex flex-col md:flex-row justify-between border-t py-10 md:py-[50px] lg:py-[52px]">
+            <h2 className="text-2xl lg:text-4xl font-medium text-[#121212] w-[30%] leading-tight uppercase">
               Content <br />
               Marketing
             </h2>
-            <div className="flex-1">
-              <p className="text-lg text-[#121212] w-[350px] pb-5">
+            <div className="flex-1 pt-4 pb-6 md:pt-0 md:pb-0">
+              <p className="text-lg text-[#121212] md:w-[300px] lg:w-[350px] pb-5">
                 We help brands stand out through aweful, elegant visual design.
                 Our design mainly philosophy.
               </p>
@@ -76,13 +76,13 @@ const OurMarketing = () => {
               <Button text={"Details"} color={"#555555"}></Button>
             </div>
           </li>
-          <li className="flex justify-between border-y  py-[52px]">
-            <h2 className="text-4xl font-medium text-[#121212] w-[30%] leading-tight uppercase">
+          <li className="flex flex-col md:flex-row justify-between border-y py-10 md:py-[50px] lg:py-[52px]">
+            <h2 className="text-2xl lg:text-4xl font-medium text-[#121212] w-[30%] leading-tight uppercase">
               Social <br />
               Marketing
             </h2>
-            <div className="flex-1">
-              <p className="text-lg text-[#121212] w-[350px] pb-5">
+            <div className="flex-1 pt-4 pb-6 md:pt-0 md:pb-0">
+              <p className="text-lg text-[#121212] md:w-[300px] lg:w-[350px] pb-5">
                 We help brands stand out through aweful, elegant visual design.
                 Our design mainly philosophy.
               </p>

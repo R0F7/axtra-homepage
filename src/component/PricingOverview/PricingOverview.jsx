@@ -4,11 +4,11 @@ import { MdArrowOutward } from "react-icons/md";
 
 const PricingOverview = () => {
   return (
-    <section className="bg-[#F3ECEC] py-[130px]">
-      <div className="container flex gap-24">
-        <div className="w-1/2">
+    <section className="bg-[#F3ECEC] py-[70px] lg:py-[130px]">
+      <div className="container flex flex-col lg:flex-row lg:gap-24">
+        <div className="w-full lg:w-1/2">
           <h4 className="text-[#555555] text-lg uppercase">Pricing Table</h4>
-          <h2 className="text-[#121212] text-6xl pb-[60px] uppercase font-medium">
+          <h2 className="text-[#121212] text-[32px] lg:text-6xl pb-[60px] uppercase font-medium">
             Be kind to your <br />
             mind
           </h2>
@@ -17,7 +17,7 @@ const PricingOverview = () => {
           </div>
         </div>
 
-        <div className="w-1/2 mt-16">
+        <div className="w-full lg:w-1/2 mt-16">
           <div className="bg-[#121212] flex justify-between gap-8 py-10 px-[30px] rounded-md mb-5 relative">
             <div className="flex items-center">
               <i className="bg-[#FF9776] w-10 h-10 rounded-md flex items-center justify-center flex-shrink-0">
