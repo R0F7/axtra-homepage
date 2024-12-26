@@ -7,14 +7,14 @@ import PropTypes from "prop-types";
 
 const RoutePage = ({ setMenuOpen }) => {
   return (
-    <section className="grid grid-cols-12">
+    <section className="grid grid-cols-12 relative">
       {/* Follow Us section */}
-      <div className="col-span-2">
-        <div className="border-b border-[#2A2A2A] pb-14 pl-[50px] pt-14">
+      <div className="md:col-span-3 lg:col-span-2 hidden md:grid">
+        <div className="border-b border-[#2A2A2A] pt-6 pl-4 pb-4 lg:pb-14 lg:pl-[50px] lg:pt-14">
           <img src={logo_white} alt="" />
         </div>
 
-        <div className="pt-56 pl-[50px] pb-16">
+        <div className="md:pt-4 lg:pt-56 pl-[50px] pb-16">
           <h4 className="text-2xl pb-5">Follow Us</h4>
           <ul className="text-lg space-y-0.5">
             <li className="hover:text-[#8E8E8E]">Dribbble</li>
@@ -41,51 +41,43 @@ const RoutePage = ({ setMenuOpen }) => {
       </div>
 
       {/* Route section */}
-      <div className="col-span-7 pt-[145px] border-x border-[#2A2A2A]">
+      <div className="col-span-12 md:col-span-5 lg:col-span-7 pt-[120px] md:pt-14 lg:pt-[145px] border-x border-[#2A2A2A]">
         <ul>
-          <li className="flex justify-between items-center text-[80px] border-t border-[#2A2A2A] pl-28 y-7 h-[120px]">
+          <li className="flex justify-between items-center text-xl lg:text-[80px] border-t border-[#2A2A2A] pl-6 lg:pl-28 y-7 h-[65px] lg:h-[120px]">
             <span>HOME</span>{" "}
-            <i className="text-2xl bg-[#2A2A2A] h-full flex items-center px-8">
+            <i className="text-2xl bg-[#2A2A2A] h-full flex items-center px-4 lg:px-8">
               <FaPlus />
             </i>
           </li>
-          <li className="flex justify-between items-center text-[80px] border-t border-[#2A2A2A] pl-28 y-7 h-[120px]">
+          <li className="flex justify-between items-center text-xl lg:text-[80px] border-t border-[#2A2A2A] pl-6 lg:pl-28 y-7 h-[65px] lg:h-[120px]">
             <span>ABOUT</span>{" "}
           </li>
-          <li className="flex justify-between items-center text-[80px] border-t border-[#2A2A2A] pl-28 y-7 h-[120px]">
+          <li className="flex justify-between items-center text-xl lg:text-[80px] border-t border-[#2A2A2A] pl-6 lg:pl-28 y-7 h-[65px] lg:h-[120px]">
             <span>SERVICE</span>{" "}
-            <i className="text-2xl bg-[#2A2A2A] h-full flex items-center px-8">
+            <i className="text-2xl bg-[#2A2A2A] h-full flex items-center px-4 lg:px-8">
               <FaPlus />
             </i>
           </li>
-          <li className="flex justify-between items-center text-[80px] border-t border-[#2A2A2A] pl-28 y-7 h-[120px]">
+          <li className="flex justify-between items-center text-xl lg:text-[80px] border-t border-[#2A2A2A] pl-6 lg:pl-28 y-7 h-[65px] lg:h-[120px]">
             <span>PAGES</span>{" "}
-            <i className="text-2xl bg-[#2A2A2A] h-full flex items-center px-8">
+            <i className="text-2xl bg-[#2A2A2A] h-full flex items-center px-4 lg:px-8">
               <FaPlus />
             </i>
           </li>
-          <li className="flex justify-between items-center text-[80px] border-t border-[#2A2A2A] pl-28 y-7 h-[120px]">
+          <li className="flex justify-between items-center text-xl lg:text-[80px] border-t border-[#2A2A2A] pl-6 lg:pl-28 y-7 h-[65px] lg:h-[120px]">
             <span>BLOG</span>{" "}
-            <i className="text-2xl bg-[#2A2A2A] h-full flex items-center px-8">
+            <i className="text-2xl bg-[#2A2A2A] h-full flex items-center px-4 lg:px-8">
               <FaPlus />
             </i>
           </li>
-          <li className="flex justify-between items-center text-[80px] border-t border-[#2A2A2A] pl-28 y-7 h-[120px]">
+          <li className="flex justify-between items-center text-xl lg:text-[80px] border-t border-[#2A2A2A] pl-6 lg:pl-28 y-7 h-[65px] lg:h-[120px]">
             <span>CONTACT</span>{" "}
           </li>
         </ul>
       </div>
 
       {/* Get in touch section */}
-      <div className="pr-[50px] col-span-3 bg-[#1D1D1D] px-[50px] relative">
-        <div className="flex justify-end pt-8">
-          <i
-            onClick={() => setMenuOpen(false)}
-            className="bg-[#232323] rounded-full p-4"
-          >
-            <FaXmark />
-          </i>
-        </div>
+      <div className="md:col-span-4 lg:col-span-3 bg-[#1D1D1D] px-6 lg:px-[50px] md:pt-10 lg:pt-20 relative hidden md:block">
         <div className="mt-24">
           <div className="relative">
             <input
@@ -93,16 +85,16 @@ const RoutePage = ({ setMenuOpen }) => {
               name="search"
               id="search"
               placeholder="Search keyword"
-              className="w-full bg-transparent border border-[#3C3C3C] p-5 rounded-full placeholder:text-sm text-[#4A4A4A] placeholder:text-[#4A4A4A] text-base outline-none"
+              className="w-full bg-transparent border border-[#3C3C3C] p-3 lg:p-5 rounded-full placeholder:text-sm text-[#4A4A4A] placeholder:text-[#4A4A4A] text-base outline-none"
             />
-            <i className="absolute top-6 right-6 text-lg">
+            <i className="absolute top-4 right-5 lg:top-6 lg:right-6 text-lg">
               <IoSearch />
             </i>
           </div>
 
-          <div className="mt-36">
+          <div className="mt-10 lg:mt-36">
             <h4 className="text-2xl pb-5">Get in touch</h4>
-            <ul className="text-lg space-y-1.5">
+            <ul className="text-base lg:text-lg space-y-1.5">
               <li className="hover:text-[#8E8E8E] hover:duration-300">
                 <a href="tel:+02094980547">+(02) - 094 980 547</a>
               </li>
@@ -123,6 +115,15 @@ const RoutePage = ({ setMenuOpen }) => {
             <img src={bigBall} className="ml0" alt="" />
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-end absolute top-6 md:top-10 right-4 md:right-10">
+        <i
+          onClick={() => setMenuOpen(false)}
+          className="bg-[#232323] rounded-full p-4"
+        >
+          <FaXmark />
+        </i>
       </div>
     </section>
   );

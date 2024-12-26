@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="flex justify-between py-5 px-[50px] elative border-b order-[#F5F5F5] fixed top-0 left-0 w-full bg-white z-50"
+      className="flex justify-between py-5 px-[15px] md:px-5 lg:px-[50px] elative border-b order-[#F5F5F5] fixed top-0 left-0 w-full bg-white z-50"
       id=""
     >
       {/* logo */}
@@ -21,7 +21,7 @@ const Navbar = () => {
       </a>
 
       {/* menu */}
-      <ul className="flex items-center gap-[90px] text-[#121212]">
+      <ul className="hidden lg:flex items-center gap-[90px] text-[#121212]">
         <li>HOME</li>
         <li>ABOUT</li>
         <li>PAGES</li>

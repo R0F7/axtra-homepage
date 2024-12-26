@@ -21,8 +21,8 @@ const Home = () => {
         <OurMarketing></OurMarketing>
         <Slider></Slider> */}
         {/* <Testimonial></Testimonial> */}
-        <WhyChooseUS></WhyChooseUS>
-        <PricingOverview></PricingOverview>
+        {/* <WhyChooseUS></WhyChooseUS> */}
+        {/* <PricingOverview></PricingOverview> */}
         {/* <RecentBlog></RecentBlog> */}
       </main>
       <footer>
