@@ -1,5 +1,5 @@
 import { IoSearch } from "react-icons/io5";
-import logo_white from "../../assets/logo-black.webp";
+import logo_black from "../../assets/logo-black.webp";
 import { CgMenuRight } from "react-icons/cg";
 import { useState } from "react";
 import { FaXmark } from "react-icons/fa6";
@@ -17,7 +17,7 @@ const Navbar = () => {
     >
       {/* logo */}
       <a to="#top">
-        <img src={logo_white} alt="Nav logo" />
+        <img src={logo_black} alt="Nav logo" />
       </a>
 
       {/* menu */}

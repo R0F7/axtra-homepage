@@ -14,7 +14,6 @@ body {
   margin: 0 auto;
 }
 
-/* Ensure higher specificity */
 .accordion.MuiAccordion-root {
   background: transparent !important;
   border-top: 1px solid black !important;
@@ -31,4 +30,11 @@ body {
 
 .accordion-details{
   color: #555555 !important;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #8b5cf6, #d946ef); 
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
