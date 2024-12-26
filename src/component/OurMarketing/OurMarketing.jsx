@@ -1,27 +1,19 @@
 import Button from "../Button/Button";
+import HomeCommon from "../HomeCommon/HomeCommon";
 
 const OurMarketing = () => {
+  const marketingContent = {
+    sub_heading: "Services",
+    title: "Our marketing <br/> Services.",
+    description:
+      "Consumers today rely heavily on digital means to research products. We research a brand of blending engaging with it, according to the meanwhile, 51% of consumers say they use Google to research products before buying.",
+  };
+
   return (
     <section className="container pb-[150px]">
-      <div className="">
-        <div className="translate-x-[515px] bg-[rgba(0,0,0,0.1)] w-px h-[125px]"></div>
+      <HomeCommon {...marketingContent}></HomeCommon>
 
-        <div className="py-16 pl-[330px]">
-          <h4 className="text-[#555555] text-lg uppercase mb-2.5">Services</h4>
-          <h1 className="text-[#121212] text-6xl uppercase font-medium mb-8">
-            Our marketing <br /> Services
-          </h1>
-          <div className="pl-[185px]">
-            <p className="text-[#555555] w-[395px] border-l border-[rgba(0,0,0,0.1)] pt-[70px] pb-[60px] pl-8">
-              Consumers today rely heavily on digital means to research
-              products. We research a brand of bldend engaging with it,
-              according to the meanwhile, 51% of consumers say they use Google
-              to research products before buying.
-            </p>
-          </div>
-        </div>
-      </div>
-
+      {/* services */}
       <div>
         <ul>
           <li className="flex justify-between border-t  py-[52px]">
