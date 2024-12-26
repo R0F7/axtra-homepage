@@ -13,3 +13,22 @@ body {
   max-width: 1296px;
   margin: 0 auto;
 }
+
+/* Ensure higher specificity */
+.accordion.MuiAccordion-root {
+  background: transparent !important;
+  border-top: 1px solid black !important;
+  box-shadow: none !important;
+  margin-bottom: 10px !important;
+  border-radius: 0px !important;
+}
+
+.accordion-title {
+  color: #121212 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+
+.accordion-details{
+  color: #555555 !important;
+}

@@ -1,6 +1,7 @@
 import Hero from "../../component/Hero/Hero";
 import Navbar from "../../component/Navbar/Navbar";
 import OurMarketing from "../../component/OurMarketing/OurMarketing";
+import PricingOverview from "../../component/PricingOverview/PricingOverview";
 import Slider from "../../component/Slider/Slider";
 import Testimonial from "../../component/Testimonial/Testimonial";
 import WhoWeAre from "../../component/WhoWeAre/WhoWeAre";
@@ -19,6 +20,7 @@ const Home = () => {
         <Slider></Slider>
         <Testimonial></Testimonial>
         <WhyChooseUS></WhyChooseUS>
+        <PricingOverview></PricingOverview>
       </main>
     </>
   );

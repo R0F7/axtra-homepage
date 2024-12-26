@@ -6,10 +6,10 @@ import ThirdPage from "./ThirdPage";
 const WhyChooseUS = () => {
   return (
     <section>
-      {/* <FirstPage></FirstPage> */}
+      <FirstPage></FirstPage>
       {/* <SecondPage></SecondPage> */}
       {/* <ThirdPage></ThirdPage> */}
-      <FourthPage></FourthPage>
+      {/* <FourthPage></FourthPage> */}
     </section>
   );
 };

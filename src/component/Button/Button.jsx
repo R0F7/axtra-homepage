@@ -6,7 +6,7 @@ const Button = ({ text, color }) => {
   return (
     <>
       <button
-        className={`flex items-center justify-center gap-1  w-40 h-40 rounded-full`}
+        className="flex items-center justify-center gap-1 w-40 h-40 rounded-full"
         style={{
             border: `1px solid ${color}`,
             color: color,
